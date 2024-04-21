@@ -10,5 +10,44 @@
     <button id="rock">rock</button>
     <button id="paper">paper</button>
     <button id="scissors">scissors</button>
+    <div id="results"></div>
+    <script>
+         // Get a reference to the button element
+        const rock_button = document.getElementById('rock');
+
+    // Add an event listener for the 'click' event
+    rock_button.addEventListener('click', function(event) {
+        // Code to execute when the button is clicked
+        let round_result = playRound("rock",getComputerChoice());
+        const result_div = document.getElementById('results');
+        
+        updateScores(round_result);
+        
+    });
+
+    // Get a reference to the button element
+    const paper_button = document.getElementById('paper');
+
+    // Add an event listener for the 'click' event
+    paper_button.addEventListener('click', function(event) {
+        // Code to execute when the button is clicked
+        let round_result = playRound("paper",getComputerChoice());
+        const result_div = document.getElementById('results');
+        
+        updateScores(round_result);
+    });
+
+    // Get a reference to the button element
+    const scissors_button = document.getElementById('scissors');
+
+    // Add an event listener for the 'click' event
+    scissors_button.addEventListener('click', function(event) {
+        // Code to execute when the button is clicked
+        let round_result = playRound("scissors",getComputerChoice());
+        const result_div = document.getElementById('results');
+        
+        updateScores(round_result);
+    });
+    </script>
 </body>
 </html>

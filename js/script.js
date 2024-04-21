@@ -1,5 +1,19 @@
 const choices = ["rock","scissors","paper"];
 
+let playerScore=0;
+let computerScore=0;
+let rounds_played=0;
+
+function updateScores(result){
+    if (result==0){
+        playerScore++;
+    } else if (result==2){
+        computerScore++;
+    }
+    const result_div = document.getElementById("results");
+
+    result_div.innerText =playerScore + " " + computerScore;
+}
 function playRound(playerSelection, computerSelection) {
     // your code here!
     console.log(playerSelection,computerSelection);
@@ -46,3 +60,5 @@ function playRound(playerSelection, computerSelection) {
   }
   
   //playGame()
+
+ 
