@@ -45,4 +45,4 @@ function playRound(playerSelection, computerSelection) {
     console.log("playerWins:" + playerWins + " computerWins:" + computerWins);
   }
   
-  playGame()
+  //playGame()
